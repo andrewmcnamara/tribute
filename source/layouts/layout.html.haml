@@ -1,0 +1,19 @@
+%html
+  %head
+    %link(href='https://storage.googleapis.com/code.getmdl.io/1.0.2/material.indigo-pink.min.css' rel='stylesheet' type='text/css')
+    %script(src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js")
+    %link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  %body.mdl-color--grey-100.mdl-color-text--grey-700.mdl-base
+    %header.mdl-layout__header.mdl-layout__header--scroll.mdl-color--primary
+      .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+        .mdl-layout--large-screen-only.mdl-layout__header-row
+          %h3 iVolunteer
+    .mdl-tabs.mdl-js-tabs.mdl-js-ripple-effect
+      .mdl-tabs__tab-bar
+        %a.mdl-tabs__tab.is-active
+          Projects
+        %a.mdl-tabs__tab
+          Sign Up
+
+    %main.mdl-layout__content
+      = yield
